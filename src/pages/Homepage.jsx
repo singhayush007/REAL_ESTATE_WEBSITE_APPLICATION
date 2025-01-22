@@ -1,8 +1,9 @@
 import React from 'react';
 import Navbar from "../components/Navbar";
 import HeroSection from '../components/HeroSection';
-import Category from '../components/Category'; 
+import Category from '../components/Category';
 import RecentProperties from '../components/RecentProperties';
+import ToolsAndResources from '../components/ToolsAndResources';
 
 const Homepage = () => {
   return (
@@ -10,7 +11,8 @@ const Homepage = () => {
       <Navbar />
       <HeroSection />
       <Category />
-      <RecentProperties/>
+      <RecentProperties />
+      <ToolsAndResources />
     </>
   );
 };

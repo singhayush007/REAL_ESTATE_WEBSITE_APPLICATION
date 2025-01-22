@@ -14,14 +14,18 @@ const Navbar = () => {
             {/* Upper Section */}
             <div className='flex flex-col sm:flex-row justify-between sm:items-center py-2 border-b-2 border-gray-300'>
                 <ul className='flex gap-3 text-sm sm:text-md text-gray-600 justify-center sm:justify-start'>
-                    <li className='uppercase cursor-pointer'>Login</li>
-                    <li className='uppercase cursor-pointer'>Register</li>
+                    <li className='uppercase cursor-pointer hover:text-yellow-500 transition-colors duration-300'>
+                        Login
+                    </li>
+                    <li className='uppercase cursor-pointer hover:text-yellow-500 transition-colors duration-300'>
+                        Register
+                    </li>
                 </ul>
                 <ul className='flex gap-4 text-sm sm:text-md text-gray-800 justify-center sm:justify-end'>
-                    <li className='flex justify-center items-center gap-2'>
+                    <li className='flex justify-center items-center gap-2 cursor-pointer hover:text-yellow-500 transition-colors duration-300'>
                         <IoMdMailOpen /> info@realestate.in
                     </li>
-                    <li className='flex justify-center items-center gap-2'>
+                    <li className='flex justify-center items-center gap-2 cursor-pointer hover:text-yellow-500 transition-colors duration-300'>
                         <IoIosCall /> 1800-1234-567
                     </li>
                 </ul>
@@ -45,12 +49,12 @@ const Navbar = () => {
                         menuOpen ? 'block' : 'hidden sm:flex'
                     }`}
                 >
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>Home</li>
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>Catalog</li>
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>Submit Property</li>
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>Services</li>
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>About</li>
-                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0'>Contact</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>Home</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>Catalog</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>Submit Property</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>Services</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>About</li>
+                    <li className='cursor-pointer hover:text-yellow-500 px-4 sm:px-0 transition-colors duration-300'>Contact</li>
                 </ul>
             </div>
         </nav>
@@ -58,3 +62,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
