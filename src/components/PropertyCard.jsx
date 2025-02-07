@@ -1,12 +1,12 @@
 import React from 'react';
 
-const PropertyCard = ({ image, title, price, sqft, bedrooms, bathrooms }) => {
+const PropertyCard = ({ image, title, price, sqft, bedrooms, bathrooms, description }) => {
     return (
         <div className='w-full max-w-sm mx-auto bg-white shadow-md overflow-hidden rounded-lg'>
             <img
                 className="w-full h-48 object-cover"
-                src={image}  // ✅ Props se image lena
-                alt={title}   // ✅ Props se title lena
+                src={image}  
+                alt={title}  
             />
             <div className="p-4">
                 <h2 className='text-xl sm:text-2xl font-bold text-yellow-500 mb-3'>{title}</h2>
@@ -16,15 +16,14 @@ const PropertyCard = ({ image, title, price, sqft, bedrooms, bathrooms }) => {
                     <li>{bedrooms}</li>
                     <li>{bathrooms}</li>
                 </ul>
-                <p className='text-gray-600 text-sm sm:text-base'>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis modi, a maxime aliquam aspernatur non doloribus voluptatum quaerat dolor ad.
-                </p>
+                <p className='text-gray-600 text-sm sm:text-base'>{description}</p>
             </div>
         </div>
     );
 };
 
 export default PropertyCard;
+
 
 
 
